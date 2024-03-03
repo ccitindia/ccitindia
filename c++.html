@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>-->
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet"> 
+
+    <link rel="stylesheet" href="bootnavbar.css" />
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="footer.css">
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- <script src="loginpop.js"></script> -->
+   <style>
+.inroll{
+  box-shadow:1px 1px 10px 0px rgb(129, 127, 127);
+  text-transform: uppercase;
+}
+   </style> 
+</head>
+<body>
+   
+    <!-- navbar start -->
+    <nav class="navbar navbar-expand-lg  sticky-top p-0" id="main_navbar" style="background-color:rgb(6, 67, 111);">
+      <div class="container-fluid">
+          <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
+              <h2 class="m-0"><img src="ccit white.png" width="100px" alt=""></h2>
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto me-5  p-4 p-2 fs-5">
+              <li class="nav-item">
+                <a class="nav-link text-light btn btn-outline-success" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light text-light btn btn-outline-success" href="#about">About</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-light btn btn-outline-success" href="#" role="button"  data-bs-toggle="dropdown">ShortTermCourses</a>
+                <ul class="dropdown-menu">
+                  
+                  <li><a class="dropdown-item" href="laravel.html">Laravel</a></li>
+                  <li><a class="dropdown-item" href="adexcel.html">Advance Excel</a></li>
+                  <!--<li>-->
+                  <!--  <hr class="dropdown-divider" />-->
+                  <!--</li>-->
+                  <li>
+                    <a class="dropdown-item" href="mongo.html">MongoDB</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="ccc.html">CCC/BCC</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="wordpress.html">WordPress</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="sql.html">SQL Server</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-light btn btn-outline-success" href="#" role="button"  data-bs-toggle="dropdown">Advance Courses</a>
+                <ul class="dropdown-menu">
+                  <li class="nav-item dropdown">
+                    <a class="dropdown-item dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                      Ethical Hacking
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="ethical6.html">6 Month</a></li>
+                      <li>
+                        <a class="dropdown-item" href="ethical12.html">12 Month</a>
+                      </li>
+                      <li>
+                        <hr class="dropdown-divider" />
+                      </li>
+                    </ul>
+                  </li>
+                  <li><a class="dropdown-item" href="hardware.html">Hardware</a></li>
+                  <li><a class="dropdown-item" href="graphic.html">Graphic Designing</a></li>
+                  <!--<li>-->
+                  <!--  <hr class="dropdown-divider" />-->
+                  <!--</li>-->
+                  <li>
+                    <a class="dropdown-item" href="app.html">App Development</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="webd.html">Website Engineering</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="tally.html">Tally Prime</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="digital.html">Digital marketing</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle text-light btn btn-outline-success" href="#" role="button"  data-bs-toggle="dropdown">Programming</a>
+                <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="python.html" >Python</a></li>
+                      <li>
+                        <a class="dropdown-item" href="c.html" >C</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="php.html" >PHP</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="java.html" >Java</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="c++.html" >C++</a>
+                      </li>
+                      
+                    </ul>
+                
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light btn btn-outline-success" href="#contact" tabindex="-1" aria-disabled="true">Contact Us</a>
+              </li>
+              <!-- <li class="nav-item">
+                <a class="nav-link text-light btn btn-light d-lg-block btn-outline-dark" href="#" tabindex="-1" aria-disabled="true">Get Started<i class="fa fa-arrow-right ms-3"></i></a>
+              </li> -->
+              <li>
+                <div class="row text-center mx-4">
+                  <a href="signup.html" class="btn btn-light p-2  d-lg-block btn btn-outline-dark ">Get Started<i class="fa fa-arrow-right ms-3"></i></a>
+              </div>
+              </li>
+            </ul>
+            
+        </div>
+       </div>
+  </nav>
+  <!-- navbar end -->
+  <div class="container-fluid">
+      <div class="p-5 text-center bg-body-tertiary rounded-3">
+        <h1 class="text-body-emphasis">C++ Programming Language</h1>
+        <p class="col-lg-8 mx-auto fs-5 text-muted">Here is all topics of C++ Programming language Provided by CCIT INDIA.We provide you all basic to advance C++ Programming to clear your topics.</p>
+        <span><a class="inroll btn btn-outline-success" href="#">Inroll now</a></span>
+      </div>
+  </div>
+
+<!-- card start -->
+<!-- <div class="container-fluid card-group">
+  <div class="card">
+    <img src="degital.png" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title"></h5>
+      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+    </div>
+  </div>
+  <div class="card">
+    <img src="degital.png" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+    </div>
+  </div>
+  <div class="card">
+    <img src="degital.png" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+    </div>
+  </div>
+</div> -->
+<!-- card end -->
+
+<!-- content starting-->
+<!-- Team Start -->
+<div class="container bg-primary mb-3 wow fadeInUp p-3" data-wow-delay="0.1s" >
+  <h4 style="color:white;" class="text-uppercase text-left">Course content</h4>
+  <!-- <h1 class="display-6 mb-1 " style="font-weight: 600;">We Have Great Experience Faculties</h1> -->
+</div>
+<div class="container-fluid  p-2 mb-5" >
+  <div class="container">
+      <div class="row g-0 team-items">
+          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+              <div class="team-item position-relative">
+                  <div class="bg-light p-4">
+                      <h5 class="mt-2">Introduction To C++</h5>
+                      <!-- <ul class="list-unstyled">
+                        <li>History</li>
+                        <li>Features</li>
+                        <li>Imporance</li>
+                      </ul> -->
+                  </div>
+              </div>
+          </div>
+          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+              <div class="team-item position-relative">
+                  <div class="bg-light p-4">
+                      <h5 class="mt-2">Data types and Variables</h5>
+                      <!-- <span>Primitive</span><br>
+                      <span class="text-left">Non-primitive</span><br>
+                      <span class="text-left">Non-primitive</span><br>
+                      <span class="text-left">Non-primitive</span> -->
+                  </div>
+              </div>
+          </div>
+          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+              <div class="team-item position-relative">
+                  <div class="bg-light p-4">
+                      <h5 class="mt-2">Operators</h5>
+                      <!-- <span>Hardware and Networking</span><br>
+                      <span class="text-left">Lorem ipsum dolor sit amet consectetur adipisicing</span> -->
+                  </div>
+              </div>
+          </div>
+          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+              <div class="team-item position-relative">
+                  <div class="bg-light p-4">
+                      <h5 class="mt-2">Conditional Statement</h5>
+                      <!-- <span>Hardware and Networking</span><br>
+                      <span class="text-left">Lorem ipsum dolor sit amet consectetur adipisicing</span> -->
+                  </div>
+              </div>
+          </div>
+          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+              <div class="team-item position-relative">
+                  <div class="bg-light p-4">
+                      <h5 class="mt-2">Loops</h5>
+                      <!-- <span>Hardware and Networking</span><br>
+                      <span class="text-left">Lorem ipsum dolor sit amet consectetur adipisicing</span> -->
+                  </div>
+              </div>
+          </div>
+          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+              <div class="team-item position-relative">
+                  <div class="bg-light p-4">
+                      <h5 class="mt-2">Function in C++</h5>
+                      <!-- <span>Hardware and Networking</span><br>
+                      <span class="text-left">Lorem ipsum dolor sit amet consectetur adipisicing</span> -->
+                  </div>
+              </div>
+          </div>
+          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+              <div class="team-item position-relative">
+                  <div class="bg-light p-4">
+                      <h5 class="mt-2">String Function</h5>
+                      <!-- <span>Hardware and Networking</span><br>
+                      <span class="text-left">Lorem ipsum dolor sit amet consectetur adipisicing</span> -->
+                  </div>
+              </div>
+          </div>
+          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+              <div class="team-item position-relative">
+                  <div class="bg-light p-4">
+                    <h5 class="mt-2">Math Function</h5>
+                    <!-- <span>Software Trainer</span><br>
+                    <span class="text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit</span> -->
+                </div>
+              </div>
+          </div>
+          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+              <div class="team-item position-relative">
+                  <div class="bg-light p-4">
+                    <h5 class="mt-2">Arrays</h5>
+                    <!-- <span>Software Trainer</span><br>
+                    <span class="text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span> -->
+                </div>
+              </div>
+          </div>
+          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+              <div class="team-item position-relative">
+                  <div class="bg-light p-4">
+                    <h5 class="mt-2">Structure, Union & Enum</h5>
+                    <!-- <span>Hardware and Networking</span><br>
+                    <span class="text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span> -->
+                </div>
+              </div>
+          </div>
+          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+              <div class="team-item position-relative">
+                  <div class="bg-light p-4">
+                    <h5 class="mt-2">Pointers</h5>
+                    <!-- <span>Hardware and Networking</span><br>
+                    <span class="text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span> -->
+                </div>
+              </div>
+          </div>
+          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+              <div class="team-item position-relative">
+                  <div class="bg-light p-4">
+                    <h5 class="mt-2">File handling</h5>
+                    <!-- <span>Hardware and Networking</span><br>
+                    <span class="text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span> -->
+                </div>
+              </div>
+          </div>
+          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+              <div class="team-item position-relative">
+                  <div class="bg-light p-4">
+                    <h5 class="mt-2">OOPs Concept</h5>
+                    <!-- <span>Hardware and Networking</span><br>
+                    <span class="text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span> -->
+                </div>
+              </div>
+          </div>
+          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+              <div class="team-item position-relative">
+                  <div class="bg-light p-4">
+                    <h5 class="mt-2">Classes and Objects</h5>
+                    <!-- <span>Hardware and Networking</span><br>
+                    <span class="text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span> -->
+                </div>
+              </div>
+          </div>
+          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+              <div class="team-item position-relative">
+                  <div class="bg-light p-4">
+                    <h5 class="mt-2">Inheritance</h5>
+                    <!-- <span>Hardware and Networking</span><br>
+                    <span class="text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span> -->
+                </div>
+              </div>
+          </div>
+          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+              <div class="team-item position-relative">
+                  <div class="bg-light p-4">
+                    <h5 class="mt-2">Abstraction</h5>
+                    <!-- <span>Hardware and Networking</span><br>
+                    <span class="text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span> -->
+                </div>
+              </div>
+          </div>
+          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+              <div class="team-item position-relative">
+                  <div class="bg-light p-4">
+                    <h5 class="mt-2">Encapsulation</h5>
+                    <!-- <span>Hardware and Networking</span><br>
+                    <span class="text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span> -->
+                </div>
+              </div>
+          </div>
+          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+              <div class="team-item position-relative">
+                  <div class="bg-light p-4">
+                    <h5 class="mt-2">Polymorphism</h5>
+                    <!-- <span>Hardware and Networking</span><br>
+                    <span class="text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span> -->
+                </div>
+              </div>
+          </div>
+          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+              <div class="team-item position-relative">
+                  <div class="bg-light p-4">
+                    <h5 class="mt-2">Project Work</h5>
+                    <!-- <span>Hardware and Networking</span><br>
+                    <span class="text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span> -->
+                </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+<!-- Team End -->
+<!-- content end -->
+<!-- footer start -->
+  
+<footer class="bg-dark-gradient footer">
+  <div class="footer-top">
+      <div class="container">
+          <div class="footer-border-bottom pb-6 mb-5">
+              <div class="row">
+                  <div class="col-lg-4 col-xl-3">
+                      <h4 class="text-white">Enquiry Now</h4>
+                          </div>
+                          <div class="col-lg-4 col-xl-6">
+                              <form class="d-flex flex-row mb-2 p-1 bg-white input-group">
+                                  <input type="email" class="form-control rounded-0 border-0" placeholder="Ex:shivam@gmail.com">
+                                  <button class="btn btn-secondary rounded-0 flex-shrink-0" type="submit">Subscribe</button>
+                              </form>
+                          </div>
+                          <div class="col-lg-4 col-xl-3">
+                              <div class="text-lg-end text-white">
+                                  <span class="h6">Call Us On</span><br>
+                                  <span class="h3">+91 85958 79229</span>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-sm-6 col-lg-3 my-4">
+                          <div class="mb-4">
+                              <img src="LOGO 3.png" width="200px" title="" alt="">
+                          </div>
+                      </div>
+                      <div class="col-sm-6 col-lg-2 my-4">
+                          <h5 class="text-white h6 mb-4">Courses</h5>
+                          <ul class="list-unstyled white-link footer-links">
+                              <li>
+                                  <a href="">Tally Level 1</a>
+                              </li>
+                              <li>
+                                  <a href="#">SEO/SMO</a>
+                              </li>
+                              <li>
+                                  <a href="#">AUTOCAD</a>
+                              </li>
+                              <li>
+                                  <a href="#">Linux Server/RHCSA</a>
+                              </li>
+                              <li>
+                                  <a href="#">Database Technology</a>
+                              </li>
+                          </ul>
+                      </div>
+                      <div class="col-sm-6 col-lg-2 my-4">
+                          <h5 class="text-white h6 mb-4">Programming</h5>
+                          <ul class="list-unstyled white-link footer-links">
+                              <li>
+                                  <a href="#">Python</a>
+                              </li>
+                              <li>
+                                  <a href="#">C++</a>
+                              </li>
+                              <li>
+                                  <a href="#">C language</a>
+                              </li>
+                              <li>
+                                  <a href="#">Java</a>
+                              </li>
+                              <li>
+                                  <a href="#">PHP</a>
+                              </li>
+                          </ul>
+                      </div>
+                      <div class="col-sm-6 col-lg-2 my-4">
+                          <h5 class="text-white h6 mb-4">FAQ</h5>
+                          <ul class="list-unstyled white-link footer-links">
+                              <li>
+                                  <a href="#about">About</a>
+                              </li>
+                              <li>
+                                  <a href="career.html">Careers</a>
+                              </li>
+                              <li>
+                                  <a href="">Cureer After Courses</a>
+                              </li>
+                              <li>
+                                  <a href="#">Feedbacks</a>
+                              </li>
+                              <!-- <li>
+                                  <a href="#"></a>
+                              </li> -->
+                          </ul>
+                      </div>
+                      <div class="col-sm-6 col-lg-3 my-4">
+                          <h5 class="text-white h6 mb-4">Address</h5>
+                          <div class="white-link">
+                            <div class="d-flex">
+                              <!-- <div class="avatar avatar-lg rounded">
+                                  <img src="LOGO 3.png" title="" alt="">
+                              </div> -->
+                              <div class="col ps-3">
+                                  <small class="text-white">29 March 2024</small>
+                                  <h6 class="font-w-500 h6 m-0"><a class="text-white" href="#">Radhey Shyam Colony, Phase 5, Gali No.3 Near By CNG Pertrol Pump</a></h6>
+                              </div>
+                          </div>
+                            <div class="d-flex my-2">
+                              <div class="col ps-3">
+                                  <small class="text-white-70">CCITINDIA</small>
+                                  <h6 class="font-w-500 h6 m-0 text-light">Muradnagar</h6>
+                              </div>
+                          </div>
+                          <div class="nav mx-3 my-4 footer-socila-icon">
+                            <a href="" target="_blank"><i class="fab fa-facebook-f" ></i></a>
+                            <a href="https://www.youtube.com/@CyberCode212/" target="_blank"><i class="fab fa-youtube" ></i></a>
+                            <a href="https://www.instagram.com/ccit_india/" target="_blank"><i class="fab fa-instagram"  ></i></a>
+                            <!-- <a href="#"><i class="fab fa-linkedin-in"></i></a> -->
+                        </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="footer-bottom footer-border-top light py-3">
+              <div class="container text-center">
+                  <p class="m-0">© 2024 copyright <a href="index.html" class="text-reset text-white">CCITINDIA</a></p>
+              </div>
+          </div>
+      </footer>
+      <!-- footer ending -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="bootnavbar.js"></script>
+<script>
+new bootnavbar();
+</script>
+</body>
+</html>
