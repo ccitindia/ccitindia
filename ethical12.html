@@ -11,337 +11,492 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet"> 
+
     <link rel="stylesheet" href="bootnavbar.css" />
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="footer.css">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="footer.css">
     <!-- Icon Font Stylesheet -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
     <!-- <script src="loginpop.js"></script> -->
-    
+   <style>
+.inroll{
+  box-shadow:1px 1px 10px 0px rgb(129, 127, 127);
+  text-transform: uppercase;
+}
+   </style> 
 </head>
 <body>
-     <!-- Topbar Start -->
-     <div class="container-fluid bg-dark text-light p-0">
-        <div class="row gx-0 d-none d-lg-flex">
-            <div class="col-lg-7 px-5 text-start">
-                <div class="h-100 d-inline-flex align-items-center me-4">
-                    <small class="fa fa-map-marker-alt text-light me-2"></small>
-                    <small>CCIT INDIA</small>
-                </div>
-                <div class="h-100 d-inline-flex align-items-center">
-                    <small class="far fa-clock text-light me-2"></small>
-                    <small>Mon - Sat : 08.00 AM - 6.30 PM</small>
-                </div>
-            </div>
-            <div class="col-lg-5 px-5 text-end">
-                <div class="h-100 d-inline-flex align-items-center me-4">
-                    <small class="fa fa-phone-alt text-light me-2"></small>
-                    <small>+91 85958 79229</small>
-                    <small class="mx-3 fa fa-phone-alt text-light me-2"></small>
-                    <small>+91 74170 62778</small>
-                </div>
-                <div class="h-100 d-inline-flex align-items-center mx-n2">
-                    <a target="_blank" class="btn btn-square btn-link text-light rounded-0 border-0 border-end border-secondary" href=""><i class="fab fa-facebook-f"></i></a>
-                    <!-- <a target="_blank" class="btn btn-square btn-link text-light rounded-0 border-0 border-end border-secondary" href=""><i class="fab fa-twitter"></i></a> -->
-                    <a target="_blank" class="btn btn-square btn-link text-light rounded-0 border-0 border-end border-secondary" href="https://www.youtube.com/@CyberCode212"><i class="fa-brands fa-youtube"></i></a>
-                    <a target="_blank" class="btn btn-square btn-link text-light rounded-0" href="https://www.instagram.com/ccit_india/"><i class="fab fa-instagram"></i></a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Topbar End -->
-<!-- Navbar Start -->
-<nav class="navbar navbar-expand-lg navbar-light sticky-top p-0" id="main_navbar" style="background-color:rgb(6, 67, 111);">
-  <div class="container-fluid">
-      <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
-          <h2 class="m-0"><img src="ccit white.png" width="100px" alt=""></h2>
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ms-auto me-5  p-4 p-2 fs-5">
-          <li class="nav-item">
-            <a class="nav-link text-light btn btn-outline-dark" aria-current="page" href="index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-light text-light btn btn-outline-dark" href="#about">About</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle text-light btn btn-outline-dark" href="#" role="button"  data-bs-toggle="dropdown">ShortTermCourses</a>
-            <ul class="dropdown-menu">
-              
-              <li><a class="dropdown-item" href="#">Laravel</a></li>
-              <li><a class="dropdown-item" href="#">Advance Excel</a></li>
-              <!--<li>-->
-              <!--  <hr class="dropdown-divider" />-->
-              <!--</li>-->
-              <li>
-                <a class="dropdown-item" href="#">MongoDB</a>
+   
+    <!-- navbar start -->
+    <nav class="navbar navbar-expand-lg  sticky-top p-0" id="main_navbar" style="background-color:rgb(6, 67, 111);">
+      <div class="container-fluid">
+          <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
+              <h2 class="m-0"><img src="ccit white.png" width="100px" alt=""></h2>
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto me-5  p-4 p-2 fs-5">
+              <li class="nav-item">
+                <a class="nav-link text-light btn btn-outline-success" aria-current="page" href="index.html">Home</a>
               </li>
-              <li>
-                <a class="dropdown-item" href="#">CCC/BCC</a>
+              <li class="nav-item">
+                <a class="nav-link text-light text-light btn btn-outline-success" href="#about">About</a>
               </li>
-              <li>
-                <a class="dropdown-item" href="#">WordPress</a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="#">SQL Server</a>
-              </li>
-            </ul>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle text-light btn btn-outline-dark" href="#" role="button"  data-bs-toggle="dropdown">Advance Courses</a>
-            <ul class="dropdown-menu">
               <li class="nav-item dropdown">
-                <a class="dropdown-item dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
-                  Ethical Hacking
-                </a>
+                <a class="nav-link dropdown-toggle text-light btn btn-outline-success" href="#" role="button"  data-bs-toggle="dropdown">ShortTermCourses</a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="ethical6.html">6 Month</a></li>
+                  
+                  <li><a class="dropdown-item" href="laravel.html">Laravel</a></li>
+                  <li><a class="dropdown-item" href="adexcel.html">Advance Excel</a></li>
+                  <!--<li>-->
+                  <!--  <hr class="dropdown-divider" />-->
+                  <!--</li>-->
                   <li>
-                    <a class="dropdown-item" href="ethical12.html">12 Month</a>
+                    <a class="dropdown-item" href="mongo.html">MongoDB</a>
                   </li>
                   <li>
-                    <hr class="dropdown-divider" />
+                    <a class="dropdown-item" href="ccc.html">CCC/BCC</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="wordpress.html">WordPress</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="sql.html">SQL Server</a>
                   </li>
                 </ul>
               </li>
-              <li><a class="dropdown-item" href="hardware.html">Hardware</a></li>
-              <li><a class="dropdown-item" href="graphic.html">Graphic Designing</a></li>
-              <!--<li>-->
-              <!--  <hr class="dropdown-divider" />-->
-              <!--</li>-->
-              <li>
-                <a class="dropdown-item" href="app.html">App Development</a>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-light btn btn-outline-success" href="#" role="button"  data-bs-toggle="dropdown">Advance Courses</a>
+                <ul class="dropdown-menu">
+                  <li class="nav-item dropdown">
+                    <a class="dropdown-item dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                      Ethical Hacking
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="ethical6.html">6 Month</a></li>
+                      <li>
+                        <a class="dropdown-item" href="ethical12.html">12 Month</a>
+                      </li>
+                      <li>
+                        <hr class="dropdown-divider" />
+                      </li>
+                    </ul>
+                  </li>
+                  <li><a class="dropdown-item" href="hardware.html">Hardware</a></li>
+                  <li><a class="dropdown-item" href="graphic.html">Graphic Designing</a></li>
+                  <!--<li>-->
+                  <!--  <hr class="dropdown-divider" />-->
+                  <!--</li>-->
+                  <li>
+                    <a class="dropdown-item" href="app.html">App Development</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="webd.html">Website Engineering</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="tally.html">Tally Prime</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="digital.html">Digital marketing</a>
+                  </li>
+                </ul>
               </li>
-              <li>
-                <a class="dropdown-item" href="webd.html">Website Engineering</a>
+              <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle text-light btn btn-outline-success" href="#" role="button"  data-bs-toggle="dropdown">Programming</a>
+                <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="python.html" >Python</a></li>
+                      <li>
+                        <a class="dropdown-item" href="c.html" >C</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="php.html" >PHP</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="java.html" >Java</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="c++.html" >C++</a>
+                      </li>
+                      
+                    </ul>
+                
               </li>
-              <li>
-                <a class="dropdown-item" href="webd.html">Tally Prime</a>
+              <li class="nav-item">
+                <a class="nav-link text-light btn btn-outline-success" href="#contact" tabindex="-1" aria-disabled="true">Contact Us</a>
               </li>
+              <!-- <li class="nav-item">
+                <a class="nav-link text-light btn btn-light d-lg-block btn-outline-dark" href="#" tabindex="-1" aria-disabled="true">Get Started<i class="fa fa-arrow-right ms-3"></i></a>
+              </li> -->
               <li>
-                <a class="dropdown-item" href="webd.html">Digital marketing</a>
+                <div class="row text-center mx-4">
+                  <a href="signup.html" class="btn btn-light p-2  d-lg-block btn btn-outline-dark ">Get Started<i class="fa fa-arrow-right ms-3"></i></a>
+              </div>
               </li>
             </ul>
-          </li>
-          <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle text-light btn btn-outline-dark" href="#" role="button"  data-bs-toggle="dropdown">Programming</a>
-            <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="python.html" >Python</a></li>
-                  <li>
-                    <a class="dropdown-item" href="c.html" >C</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="php.html" >PHP</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="java.html" >Java</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="c++.html" >C++</a>
-                  </li>
-                  
-                </ul>
             
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-light btn btn-outline-dark" href="#contact" tabindex="-1" aria-disabled="true">Contect Us</a>
-          </li>
-          <!-- <li class="nav-item">
-            <a class="nav-link text-light btn btn-light d-lg-block btn-outline-dark" href="#" tabindex="-1" aria-disabled="true">Get Started<i class="fa fa-arrow-right ms-3"></i></a>
-          </li> -->
-          <li>
-            <div class="row text-center mx-4">
-              <a href="signup.html" class="btn btn-light p-2  d-lg-block btn btn-outline-dark ">Get Started<i class="fa fa-arrow-right ms-3"></i></a>
-          </div>
-          </li>
-        </ul>
-        
-    </div>
-   </div>
-</nav>
-<!-- Navbar End -->
-<div class="container px-4 py-5 my-5 ">
-    <img class="img-fluid rounded mx-auto d-block" src="images/close-up-man-talking-phone.jpg" alt="" >
-    <h1 class="display-5 fw-bold my-4 text-body-emphasis text-center fw-normal">Ethical Hacking</h1>
-    <div class="col-lg-6 mx-auto">
-      <p class="lead mb-4 text-center fw-normal">Ethical Hacking Full course include 12 months with basic computer and Ethical hacking concepts</p>
-    </div>
-  
-      <!-- <hr class="border border-primary border-2 opacity-100"> -->
-        <div class="row">
-            <div class="container">
-                <h3 class="bg-primary p-2 text-light">Cyber Security and Ethical Hacking(12 Months)</h3>
-                
-                <h5>Unit 1</h5>
-                <ul class="list-unstyled">
-                    <li>Basic Computer Application</li>
-                    <li>Programming Language ( C & PHP )</li>
-                    <li>Networking</li>
-                    <li>Operating System ( Windows , DOS & LINUX )</li>
-                    <li>Database ( SQL Language )</li>
-                </ul>
-                <h4>Unit 2</h4>
-                <ul class="list-unstyled">
-                    <li>Introduction To Cyber Security</li>
-                    <li>Cyber Laws And Standards</li>
-                    <li>Footprinting</li>
-                    <li>Network Scanning</li>
-                    <li>Spoofing</li>
-                    <li>System Hacking</li>
-                    <li>Web Application Hacking</li>
-                    <li>Injection</li>
-                    <li>Mobile Security</li>
-                    <li>Web server Hacking</li>
-                    <li>Firewall IDS And IPS</li>
-                    <li>Malwares</li>
-                    <li>Denial-Of-Service ( DoS )</li>
-                    <li>Wireless Hacking</li>
-                    <li>Social Engineering</li>
-                    <li>Cryptography</li>
-                    <li>Cloud Security</li>
-                    <li>Internet Of Things ( IoT Security )</li>
-                    <li>Penetration Testing</li>
-                </ul>
-            </div>
         </div>
-</div>
-      <!-- footer start -->
-      <footer class="bg-dark-gradient footer">
-        <div class="footer-top">
-            <div class="container">
-                <div class="footer-border-bottom pb-6 mb-5">
-                    <div class="row">
-                        <div class="col-lg-4 col-xl-3">
-                            <h4 class="text-white">
-                                Enquiry Now
-                            </h4>
-                        </div>
-                        <div class="col-lg-4 col-xl-6">
-                            <form class="d-flex flex-row mb-2 p-1 bg-white input-group">
-                                <input type="email" class="form-control rounded-0 border-0" placeholder="Ex:shivam@gmail.com">
-                                <button class="btn btn-secondary rounded-0 flex-shrink-0" type="submit">Subscribe</button>
-                            </form>
-                        </div>
-                        <div class="col-lg-4 col-xl-3">
-                            <div class="text-lg-end text-white">
-                                <span class="h6">Call Us On</span><br>
-                                <span class="h3">+91 85958 79229</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-sm-6 col-lg-3 my-4">
-                        <div class="mb-4">
-                            <img src="LOGO 3.png" width="200px" title="" alt="">
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-lg-2 my-4">
-                        <h5 class="text-white h6 mb-4">Courses</h5>
-                        <ul class="list-unstyled white-link footer-links">
-                            <li>
-                                <a href="">Tally Level 1</a>
-                            </li>
-                            <li>
-                                <a href="#">SEO/SMO</a>
-                            </li>
-                            <li>
-                                <a href="#">AUTOCAD</a>
-                            </li>
-                            <li>
-                                <a href="#">Linux Server/RHCSA</a>
-                            </li>
-                            <li>
-                                <a href="#">Database Technology</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col-sm-6 col-lg-2 my-4">
-                        <h5 class="text-white h6 mb-4">Programming</h5>
-                        <ul class="list-unstyled white-link footer-links">
-                            <li>
-                                <a href="#">Python</a>
-                            </li>
-                            <li>
-                                <a href="#">C++</a>
-                            </li>
-                            <li>
-                                <a href="#">C language</a>
-                            </li>
-                            <li>
-                                <a href="#">Java</a>
-                            </li>
-                            <li>
-                                <a href="#">PHP</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col-sm-6 col-lg-2 my-4">
-                        <h5 class="text-white h6 mb-4">FAQ</h5>
-                        <ul class="list-unstyled white-link footer-links">
-                            <li>
-                                <a href="#about">About</a>
-                            </li>
-                            <li>
-                                <a href="career.html">Careers</a>
-                            </li>
-                            <li>
-                                <a href="">Cureer After Courses</a>
-                            </li>
-                            <li>
-                                <a href="#">Feedbacks</a>
-                            </li>
-                            <!-- <li>
-                                <a href="#"></a>
-                            </li> -->
-                        </ul>
-                    </div>
-                    <div class="col-sm-6 col-lg-3 my-4">
-                        <h5 class="text-white h6 mb-4">Address</h5>
-                        <div class="white-link">
-                          <div class="d-flex">
-                            <!-- <div class="avatar avatar-lg rounded">
-                                <img src="LOGO 3.png" title="" alt="">
-                            </div> -->
-                            <div class="col ps-3">
-                                <small class="text-white">29 March 2024</small>
-                                <h6 class="font-w-500 h6 m-0"><a class="text-white" href="#">Radhey Shyam Colony, Phase 5, Gali No.3 Near By CNG Pertrol Pump</a></h6>
-                            </div>
-                        </div>
-                          <div class="d-flex my-2">
-                            <div class="col ps-3">
-                                <small class="text-white-70">CCITINDIA</small>
-                                <h6 class="font-w-500 h6 m-0 text-light">Muradnagar</h6>
-                            </div>
-                        </div>
-                        <div class="nav mx-3 my-4 footer-socila-icon">
-                          <a href="" target="_blank"><i class="fab fa-facebook-f" ></i></a>
-                          <a href="https://www.youtube.com/@CyberCode212/" target="_blank"><i class="fab fa-youtube" ></i></a>
-                          <a href="https://www.instagram.com/ccit_india/" target="_blank"><i class="fab fa-instagram"  ></i></a>
-                          <!-- <a href="#"><i class="fab fa-linkedin-in"></i></a> -->
-                      </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="footer-bottom footer-border-top light py-3">
-            <div class="container text-center">
-                <p class="m-0">© 2024 copyright <a href="index.html" class="text-reset text-white">CCITINDIA</a></p>
-            </div>
-        </div>
-    </footer>
-      
-<!-- footer end -->
+       </div>
+  </nav>
+  <!-- navbar end -->
+  <div class="container-fluid">
+      <div class="p-5 text-center bg-body-tertiary rounded-3">
+        <h1 class="text-body-emphasis">Ethical Hacking & Cyber Security</h1>
+        <p class="col-lg-8 mx-auto fs-5 text-muted">Here is all topics of Ethical Hacking Provided by CCIT INDIA.We provide you all  Ethical Hacking concepts to clear your topics.</p>
+        <span><a class="inroll btn btn-outline-success" href="#">Inroll now</a></span>
+      </div>
+  </div>
 
+<!-- content starting-->
+<div class="container bg-primary mb-3 wow fadeInUp p-3" data-wow-delay="0.1s" >
+  <h4 style="color:white;" class="text-uppercase text-left">Part One 1 Months</h4>
+  <!-- <h1 class="display-6 mb-1 " style="font-weight: 600;">We Have Great Experience Faculties</h1> -->
+</div>
+<div class="container-fluid  p-2 mb-5" >
+  <div class="container">
+      <div class="row g-0 team-items">
+          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+              <div class="team-item position-relative">
+                  <div class="bg-light p-4">
+                      <h5 class="mt-2">Basic Computer Application</h5>
+                     
+                  </div>
+              </div>
+          </div>
+          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+              <div class="team-item position-relative">
+                  <div class="bg-light p-4">
+                      <h5 class="mt-2">Programming Language ( C & PHP )</h5>
+                      
+                  </div>
+              </div>
+          </div>
+          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+              <div class="team-item position-relative">
+                  <div class="bg-light p-4">
+                      <h5 class="mt-2">Networking</h5>
+                      
+                  </div>
+              </div>
+          </div>
+          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+              <div class="team-item position-relative">
+                  <div class="bg-light p-4">
+                      <h5 class="mt-2">Operating System</h5>
+                      
+                  </div>
+              </div>
+          </div>
+          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+              <div class="team-item position-relative">
+                  <div class="bg-light p-4">
+                      <h5 class="mt-2">Database( SQL Language )</h5>
+                  
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+<!-- Team End -->
+
+<!-- Team Start -->
+<div class="container bg-primary mb-3 wow fadeInUp p-3" data-wow-delay="0.1s" >
+  <h4 style="color:white;" class="text-uppercase text-left">Cyber Security and Ethical Hacking Part Two (6 Months)
+  </h4>
+  <!-- <h1 class="display-6 mb-1 " style="font-weight: 600;">We Have Great Experience Faculties</h1> -->
+</div>
+<div class="container-fluid  p-2 mb-5" >
+  <div class="container">
+      <div class="row g-0 team-items">
+          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+              <div class="team-item position-relative">
+                  <div class="bg-light p-4">
+                      <h5 class="mt-2">Introduction To Cyber Security</h5>
+                     
+                  </div>
+              </div>
+          </div>
+          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+              <div class="team-item position-relative">
+                  <div class="bg-light p-4">
+                      <h5 class="mt-2">Cyber Laws And Standards</h5>
+                      
+                  </div>
+              </div>
+          </div>
+          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+              <div class="team-item position-relative">
+                  <div class="bg-light p-4">
+                      <h5 class="mt-2">Footprinting</h5>
+                      
+                  </div>
+              </div>
+          </div>
+          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+              <div class="team-item position-relative">
+                  <div class="bg-light p-4">
+                      <h5 class="mt-2">Network Scanning</h5>
+                      
+                  </div>
+              </div>
+          </div>
+          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+              <div class="team-item position-relative">
+                  <div class="bg-light p-4">
+                      <h5 class="mt-2">Spoofing</h5>
+                  
+                  </div>
+              </div>
+          </div>
+          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+              <div class="team-item position-relative">
+                  <div class="bg-light p-4">
+                      <h5 class="mt-2">System Hacking</h5>
+                  
+                  </div>
+              </div>
+          </div>
+          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+              <div class="team-item position-relative">
+                  <div class="bg-light p-4">
+                      <h5 class="mt-2">Web Application Hacking/h5>
+                  
+                  </div>
+              </div>
+          </div>
+          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+              <div class="team-item position-relative">
+                  <div class="bg-light p-4">
+                    <h5 class="mt-2">Injection</h5>
+                   
+                </div>
+              </div>
+          </div>
+          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+              <div class="team-item position-relative">
+                  <div class="bg-light p-4">
+                    <h5 class="mt-2">Mobile Security</h5>
+                   
+                </div>
+              </div>
+          </div>
+          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+              <div class="team-item position-relative">
+                  <div class="bg-light p-4">
+                    <h5 class="mt-2">Web server Hacking</h5>
+                   
+                </div>
+              </div>
+          </div>
+          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+              <div class="team-item position-relative">
+                  <div class="bg-light p-4">
+                    <h5 class="mt-2">Firewall IDS And IPS</h5>
+                    
+                </div>
+              </div>
+          </div>
+          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+              <div class="team-item position-relative">
+                  <div class="bg-light p-4">
+                    <h5 class="mt-2">Malwares</h5>
+                    
+                </div>
+              </div>
+          </div>
+          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+              <div class="team-item position-relative">
+                  <div class="bg-light p-4">
+                    <h5 class="mt-2">Denial-Of-Service ( DoS )</h5>
+                    
+                </div>
+              </div>
+          </div>
+          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+              <div class="team-item position-relative">
+                  <div class="bg-light p-4">
+                    <h5 class="mt-2">Wireless Hacking</h5>
+                    
+                </div>
+              </div>
+          </div>
+          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+              <div class="team-item position-relative">
+                  <div class="bg-light p-4">
+                    <h5 class="mt-2">Social Engineering</h5>
+                    
+                </div>
+              </div>
+          </div>
+          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+              <div class="team-item position-relative">
+                  <div class="bg-light p-4">
+                    <h5 class="mt-2">Cryptography</h5>
+                    
+                </div>
+              </div>
+          </div>
+          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+              <div class="team-item position-relative">
+                  <div class="bg-light p-4">
+                    <h5 class="mt-2">Cloud Security</h5>
+                    
+                </div>
+              </div>
+          </div>
+          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+              <div class="team-item position-relative">
+                  <div class="bg-light p-4">
+                    <h5 class="mt-2">Internet Of Things ( IoT Security )</h5>
+                    
+                </div>
+              </div>
+          </div>
+          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+              <div class="team-item position-relative">
+                  <div class="bg-light p-4">
+                    <h5 class="mt-2">Penetration Testing</h5>
+                    
+                </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+<!-- content end -->
+<!-- footer start -->
+  
+<footer class="bg-dark-gradient footer">
+  <div class="footer-top">
+      <div class="container">
+          <div class="footer-border-bottom pb-6 mb-5">
+              <div class="row">
+                  <div class="col-lg-4 col-xl-3">
+                      <h4 class="text-white">Enquiry Now</h4>
+                          </div>
+                          <div class="col-lg-4 col-xl-6">
+                              <form class="d-flex flex-row mb-2 p-1 bg-white input-group">
+                                  <input type="email" class="form-control rounded-0 border-0" placeholder="Ex:shivam@gmail.com">
+                                  <button class="btn btn-secondary rounded-0 flex-shrink-0" type="submit">Subscribe</button>
+                              </form>
+                          </div>
+                          <div class="col-lg-4 col-xl-3">
+                              <div class="text-lg-end text-white">
+                                  <span class="h6">Call Us On</span><br>
+                                  <span class="h3">+91 85958 79229</span>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-sm-6 col-lg-3 my-4">
+                          <div class="mb-4">
+                              <img src="LOGO 3.png" width="200px" title="" alt="">
+                          </div>
+                      </div>
+                      <div class="col-sm-6 col-lg-2 my-4">
+                          <h5 class="text-white h6 mb-4">Courses</h5>
+                          <ul class="list-unstyled white-link footer-links">
+                              <li>
+                                  <a href="">Tally Level 1</a>
+                              </li>
+                              <li>
+                                  <a href="#">SEO/SMO</a>
+                              </li>
+                              <li>
+                                  <a href="#">AUTOCAD</a>
+                              </li>
+                              <li>
+                                  <a href="#">Linux Server/RHCSA</a>
+                              </li>
+                              <li>
+                                  <a href="#">Database Technology</a>
+                              </li>
+                          </ul>
+                      </div>
+                      <div class="col-sm-6 col-lg-2 my-4">
+                          <h5 class="text-white h6 mb-4">Programming</h5>
+                          <ul class="list-unstyled white-link footer-links">
+                              <li>
+                                  <a href="#">Python</a>
+                              </li>
+                              <li>
+                                  <a href="#">C++</a>
+                              </li>
+                              <li>
+                                  <a href="#">C language</a>
+                              </li>
+                              <li>
+                                  <a href="#">Java</a>
+                              </li>
+                              <li>
+                                  <a href="#">PHP</a>
+                              </li>
+                          </ul>
+                      </div>
+                      <div class="col-sm-6 col-lg-2 my-4">
+                          <h5 class="text-white h6 mb-4">FAQ</h5>
+                          <ul class="list-unstyled white-link footer-links">
+                              <li>
+                                  <a href="#about">About</a>
+                              </li>
+                              <li>
+                                  <a href="career.html">Careers</a>
+                              </li>
+                              <li>
+                                  <a href="">Cureer After Courses</a>
+                              </li>
+                              <li>
+                                  <a href="#">Feedbacks</a>
+                              </li>
+                              <!-- <li>
+                                  <a href="#"></a>
+                              </li> -->
+                          </ul>
+                      </div>
+                      <div class="col-sm-6 col-lg-3 my-4">
+                          <h5 class="text-white h6 mb-4">Address</h5>
+                          <div class="white-link">
+                            <div class="d-flex">
+                              <!-- <div class="avatar avatar-lg rounded">
+                                  <img src="LOGO 3.png" title="" alt="">
+                              </div> -->
+                              <div class="col ps-3">
+                                  <small class="text-white">29 March 2024</small>
+                                  <h6 class="font-w-500 h6 m-0"><a class="text-white" href="#">Radhey Shyam Colony, Phase 5, Gali No.3 Near By CNG Pertrol Pump</a></h6>
+                              </div>
+                          </div>
+                            <div class="d-flex my-2">
+                              <div class="col ps-3">
+                                  <small class="text-white-70">CCITINDIA</small>
+                                  <h6 class="font-w-500 h6 m-0 text-light">Muradnagar</h6>
+                              </div>
+                          </div>
+                          <div class="nav mx-3 my-4 footer-socila-icon">
+                            <a href="" target="_blank"><i class="fab fa-facebook-f" ></i></a>
+                            <a href="https://www.youtube.com/@CyberCode212/" target="_blank"><i class="fab fa-youtube" ></i></a>
+                            <a href="https://www.instagram.com/ccit_india/" target="_blank"><i class="fab fa-instagram"  ></i></a>
+                            <!-- <a href="#"><i class="fab fa-linkedin-in"></i></a> -->
+                        </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="footer-bottom footer-border-top light py-3">
+              <div class="container text-center">
+                  <p class="m-0">© 2024 copyright <a href="index.html" class="text-reset text-white">CCITINDIA</a></p>
+              </div>
+          </div>
+      </footer>
+      <!-- footer ending -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 <script src="bootnavbar.js"></script>
 <script>
-      new bootnavbar();
-    </script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+new bootnavbar();
+</script>
 </body>
 </html>
