@@ -27,7 +27,53 @@
     <meta name="description" content="Multi level hover dropdown Navbar for bootstrap 4 and bootstrap 5"/>
     <meta name="keywords" content="Multi level hover dropdown Navbar for bootstrap 4 and bootstrap 5"/>
   </head>
+<style>
 
+  .about h2{
+    display: block;
+    position: absolute;
+    /* top: 0; */
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+    width: 55px;
+    height: 4px;
+    content: '';
+    background: #ffb606;
+  }
+  .card-group{
+    /* background-color: rgb(245, 245, 245); */
+    padding: 10px;
+  }
+  .card{
+    background-color: white;
+    margin: 12px;
+    box-shadow: 2px 4px 10px rgb(198, 198, 198);
+  }
+  .animate h3::after {
+     
+    display: block;
+    position: absolute;
+    /* top: 50; */
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+    width: 55px;
+    height: 4px;
+    content: '';
+    background: #ffb606;
+  }
+
+ 
+
+ 
+</style>
   <body>
        <!-- Topbar Start -->
 <div class="container-fluid bg-dark text-light p">
@@ -160,12 +206,12 @@
             <li class="nav-item">
               <a class="nav-link text-light btn btn-outline-dark" href="#contact" tabindex="-1" aria-disabled="true">Contact Us</a>
             </li>
-<!--             <li class="nav-item">
+            <li class="nav-item">
               <a class="nav-link text-light btn btn-light d-lg-block btn-outline-dark" href="#" tabindex="-1" aria-disabled="true">Get Started<i class="fa fa-arrow-right ms-3"></i></a>
-            </li> -->
+            </li>
 <!--             <li>
               <div class="row text-center">
-                <a href="contact.html" class="btn-light p-2  d-lg-block btn btn-outline-dark">Get Started<i class="fa fa-arrow-right ms-3"></i></a>
+                <a href="inroll.html" class="btn-light p-2  d-lg-block btn btn-outline-dark">Get Started<i class="fa fa-arrow-right ms-3"></i></a>
               </div>
             </li> -->
           </ul>
@@ -213,28 +259,88 @@
   </button>
 </div>
  <!-- slider end -->
-<!--   marquee start   -->
-<div class="alert rounded-0 text-light fs-4 bg-primary bg-gradient" role="alert">
-<marquee class="marq" direction="left" loop=""> 
-  <span ><a href="#contact" class="btn-light border-2 bg-light p-2  text-dark">Click to INROLL</a></span> 
-  <span>Limited seats available  Give it a click if you like.</span> 
-</marquee>
+
+ <!-- course content details start -->
+ <div class="animate text-center my-5 mb-2">
+  <h3>Our Best Course</h3>
+  <span></span>
 </div>
-<!--   marquee end   -->
+ <div class="card-group container rounded-0">
+ 
+  <div class="card">
+    <img src="Trendy Website Homepage Accessories Sale Banner.png" class="card-img-top" alt="...">
+    <div class="card-body container-fluid">
+      <h5 class="card-title">Python</h5>
+      <p class="card-text">Data Types, Conditional Execution, Loops, Lists and more</p>
+      <!-- <div class="row card-body" style="background-color: rgb(234, 234, 234);">
+          <div class="col-sm-9 p-3">Contact Now</div>
+          <div class="col-3 p-3 text-end "><a aria-label="Chat on WhatsApp" class=" border-2 p-2 rounded-circle bg-success" target="_blank" href="https://wa.me/9667649119"> <i class="fa-brands fa-whatsapp fs-4 text-white"></i>
+          </a>
+        </div>
+      </div> -->
+    </div>
+      
+  </div>
+  <div class="card rounded-0">
+    <img src="hacking.png" clarounded-0 ss="card-img-top" alt="...">
+    <div class="card-body rounded-0 ">
+      <h5 class="card-title">HTML</h5>
+      <p class="card-text">HTML attributes, tags, form, lists, media tags, header, footer and more.</p>
+    </div>
+    
+  </div>
+  <div class="card rounded-0">
+    <img src="web.png" class="rounded-0 card-img-top" alt="...">
+    <div class="card-body rounded-0">
+      <h5 class="card-title">CSS</h5>
+      <p class="card-text">CSS types, alignment, display properties, classes, media query, animation and more.</p>
+    </div>
+    
+  </div>
+</div>
+ <div class="card-group container rounded-0 my-2">
+  <div class="card">
+    <img src="Trendy Website Homepage Accessories Sale Banner.png" class="card-img-top" alt="...">
+      <div class="card-body rounded-0 ">
+      <h5 class="card-title">JavaScript</h5>
+      <p class="card-text">JavaScript variable and data type, Conditional statement, loops, DOM and BOM and more.</p>
+    </div>
+  </div>
+  <div class="card rounded-0">
+    <img src="hacking.png" clarounded-0 ss="card-img-top" alt="...">
+    <div class="card-body rounded-0 ">
+      <h5 class="card-title">App Development</h5>
+      <p class="card-text">Android Overview, Android Stack, Advance User Interface, SQLite Database and more.</p>
+    </div>
+    
+  </div>
+  <div class="card rounded-0">
+    <img src="web.png" class="rounded-0 card-img-top" alt="...">
+    <div class="card-body rounded-0">
+      <h5 class="card-title">Hardware</h5>
+      <p class="card-text">troubleshooting, system assembling, Networking concepts</p>
+    </div>
+    
+  </div>
+</div>
+
+<!-- course content details end -->
+ 
+
 <!-- About Start -->
 <!-- About 1 - Bootstrap Brain Component -->
-<section class="py-3 py-md-5 py-xl-8">
+<section class="py-3 py-md-5 py-xl-4">
     <div class="container">
       <div class="row gy-3 gy-md-4 gy-lg-0 align-items-lg-center">
         <div class="col-12 col-lg-6 col-xl-5">
           <img class="img-fluid rounded" loading="lazy" src="logo.png" alt="">
         </div>
-        <div class="col-12 col-lg-6 col-xl-7" id="about">
+        <div class="col-12 col-lg-6 col-xl-7">
           <div class="row justify-content-xl-center">
             <div class="col-12 col-xl-11">
-              <h2 class="h1 mb-3" style="color: rgb(6, 67, 111);">About Us</h2>
+              <h2 class="mb-3" id="about" style="color: rgb(6, 67, 111);">About Us</h2>
               <p class="lead fs-4 text-secondary mb-3" style="text-align: justify;">CCIT(Cyber Code For Information Technology) computer institute present you to provide best computer skill in India.</p>
-              <p class="mb-5" style="text-align: justify;">CCIT is the Best institute in uttar pradesh, which provides you a many courses like- hardware, Software, Ethical hacking, Tally, graphic Designing and short term courses.CCIT also provides a diploma courses.All courses have different fee structures and time duration.<br><br>As one of the best IT training institutes in UP, we focus on providing the best classroom experience to ensure that you are trained under the guidance of experts. We are sure to turn your ambitions into great skills and your goals into results. CCIT is the best NIELIT institute in Uttar Pradesh with a team of experts. We offer a wide range of professional courses, including graphic design, animation, digital marketing, hardware and networking, software engineering and website design.</p>
+              <p class="mb-5" style="text-align: justify;">CCIT is the Best institute in uttar pradesh, which provides you a many courses like- hardware, Software, Ethical hacking, Tally, graphic Designing and short term courses.CCIT also provides a diploma courses.All courses have different fee structures and time duration. The academics of all courses are up-to-date and specially designed for a better career of the students. <br>Being one of the best IT training institutes in Delhi, we focus on offering you the best class room experience to ensure that you will get the training under the experts. We are surely going to turn your ambitions into remarkable skills and goals into results with us. IICS is the best NIELIT institute in uttar pradesh with a team expert faculties. We provide you a wide range of career oriented courses including graphic designing, animation, digital marketing, hardware and networking, software engineering, website designing, etc.</p>
               <p class="mb-5">Let's start your cureer with us.</p>
               <div class="row gy-4 gy-md-0 gx-xxl-5X">
                 <div class="col-12 col-md-6 p-4 border-end border-2" style="background-color: cadetblue;">
@@ -269,22 +375,17 @@
 <!-- About End -->
 
 <!-- Team Start -->
-  <div class="container-fluid  p-5 bg-light border-bottom border-grey" style="margin-top:100px;">
+  <div class=" container-fluid  p-5 bg-light border-bottom border-grey" style="margin-top:100px;">
       <div class="container-fluid">
-          <div class="text-center mx-auto mb-5 wow fadeInUp" style="margin-top:20px;" data-wow-delay="0.1s" style="max-width: 500px;">
-              <h4 style="color: rgb(6, 67, 111);" class="text-uppercase">Our Faculties</h4>
-              <h1 class="display-6 mb-1 " style="font-weight: 600;">We Have Great Experience Faculties</h1>
+          <div class="text-center line mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+              <h4 style="color: rgb(6, 67, 111);" class="text-uppercase ">Our Faculties</h4>
+              <h1 class="display-6" style="font-weight: 600;">We Have Great Experience Faculties</h1>
           </div>
           <div class="row g-0 team-items">
               <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                   <div class="team-item position-relative">
                       <div class="position-relative">
                           <img class="img-fluid" src="360_F_364211147_1qgLVxv1Tcq0Ohz3FawUfrtONzz8nq3e.jpg" alt="">
-                          <!-- <div class="team-social text-center">
-                              <a class="btn btn-square btn-outline-primary border-2 m-1" href=""><i class="fab fa-facebook-f"></i></a>
-                              <a class="btn btn-square btn-outline-primary border-2 m-1" href=""><i class="fab fa-twitter"></i></a>
-                              <a class="btn btn-square btn-outline-primary border-2 m-1" href=""><i class="fab fa-instagram"></i></a>
-                          </div> -->
                       </div>
                       <div class="bg-light p-4">
                           <h5 class="mt-2 text-center">Mr.Gaurav</h5>
@@ -297,11 +398,7 @@
                   <div class="team-item position-relative">
                       <div class="position-relative">
                           <img class="img-fluid" src="360_F_364211147_1qgLVxv1Tcq0Ohz3FawUfrtONzz8nq3e.jpg" alt="">
-                          <!-- <div class="team-social text-center">
-                              <a class="btn btn-square btn-outline-primary border-2 m-1" href=""><i class="fab fa-facebook-f"></i></a>
-                              <a class="btn btn-square btn-outline-primary border-2 m-1" href=""><i class="fab fa-twitter"></i></a>
-                              <a class="btn btn-square btn-outline-primary border-2 m-1" href=""><i class="fab fa-instagram"></i></a>
-                          </div> -->
+                        
                       </div>
                       <div class="bg-light p-4">
                         <h5 class="mt-2 text-center">Mr. Vikas</h5>
@@ -314,11 +411,7 @@
                   <div class="team-item position-relative">
                       <div class="position-relative">
                           <img class="img-fluid" src="360_F_364211147_1qgLVxv1Tcq0Ohz3FawUfrtONzz8nq3e.jpg" alt="">
-                          <!-- <div class="team-social text-center">
-                              <a class="btn btn-square btn-outline-primary border-2 m-1" href=""><i class="fab fa-facebook-f"></i></a>
-                              <a class="btn btn-square btn-outline-primary border-2 m-1" href=""><i class="fab fa-twitter"></i></a>
-                              <a class="btn btn-square btn-outline-primary border-2 m-1" href=""><i class="fab fa-instagram"></i></a>
-                          </div> -->
+                        
                       </div>
                       <div class="bg-light p-4">
                         <h5 class="mt-2 text-center">Mr. Shivam</h5>
@@ -331,11 +424,7 @@
                   <div class="team-item position-relative">
                       <div class="position-relative">
                           <img class="img-fluid" src="360_F_364211147_1qgLVxv1Tcq0Ohz3FawUfrtONzz8nq3e.jpg" alt="">
-                          <!-- <div class="team-social text-center">
-                              <a class="btn btn-square btn-outline-primary border-2 m-1" href=""><i class="fab fa-facebook-f"></i></a>
-                              <a class="btn btn-square btn-outline-primary border-2 m-1" href=""><i class="fab fa-twitter"></i></a>
-                              <a class="btn btn-square btn-outline-primary border-2 m-1" href=""><i class="fab fa-instagram"></i></a>
-                          </div> -->
+                        
                       </div>
                       <div class="bg-light p-4">
                         <h5 class="mt-2 text-center">Mr. Prashant</h5>
@@ -349,8 +438,8 @@
   </div>
   <!-- Team End -->
 
-<!-- contact page -->
-<section class="section gray-bg" id="contact">
+  <!-- contact page -->
+<section class="section gray-bg" id="contactus">
   <div class="container">
       <div class="row">
           <div class="col-lg-6">
@@ -376,7 +465,7 @@
                           </div>
                           <div class="col-md-6">
                               <div class="form-group">
-                                 <input id="email" type="tel" placeholder="Phone number" class="form-control" required>  
+                                 <input id="email" type="tel" placeholder="Phone number" class="form-control" id="phone" required>  
                               </div>
                           </div>
                           <div class="col-6">
@@ -386,7 +475,7 @@
                           </div>
                           <div class="col-6">
                               <div class="form-group">
-                                  <input id="subject" type="text" placeholder="Course name" class="form-control" required> 
+                                  <input id="subject" type="text" placeholder="Subject" class="form-control" required> 
                               </div>
                           </div>
                           <div class="col-md-12">
@@ -437,136 +526,140 @@
 </section>
 
 <!-- contact page end -->
+
 <!-- footer start -->
 <!-- <div class="container-fluid" style="margin-top:100px;">
    -->
- <footer class="bg-dark-gradient footer">
-  <div class="footer-top">
-      <div class="container">
-          <div class="footer-border-bottom pb-6 mb-5">
-              <div class="row">
-                  <div class="col-lg-4 col-xl-3">
-                      <h4 class="text-white">Enquiry Now</h4>
-                          </div>
-                          <div class="col-lg-4 col-xl-6">
-                              <form class="d-flex flex-row mb-2 p-1 bg-white input-group">
-                                  <input type="email" class="form-control rounded-0 border-0" placeholder="Ex:shivam@gmail.com">
-                                  <button class="btn btn-secondary rounded-0 flex-shrink-0" type="submit">Subscribe</button>
-                              </form>
-                          </div>
-                          <div class="col-lg-4 col-xl-3">
-                              <div class="text-lg-end text-white">
-                                  <span class="h6">Call Us On</span><br>
-                                  <span class="h3">+91 85958 79229</span>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-                  <div class="row">
-                      <div class="col-sm-6 col-lg-3 my-4">
-                          <div class="mb-4">
-                              <img src="LOGO 3.png" width="200px" title="" alt="">
-                          </div>
-                      </div>
-                      <div class="col-sm-6 col-lg-2 my-4">
-                          <h5 class="text-white h6 mb-4">Courses</h5>
-                          <ul class="list-unstyled white-link footer-links">
-                              <li>
-                                  <a href="tally.html">Tally Level 1</a>
-                              </li>
-                              <li>
-                                  <a href="seo.html">SEO/SMO</a>
-                              </li>
-                              <li>
-                                  <a href="autocad.html">AUTOCAD</a>
-                              </li>
-                              <li>
-                                  <a href="linux.html">Linux Server/RHCSA</a>
-                              </li>
-                              <li>
-                                  <a href="db.html">Database Technology</a>
-                              </li>
-                          </ul>
-                      </div>
-                      <div class="col-sm-6 col-lg-2 my-4">
-                          <h5 class="text-white h6 mb-4">Programming</h5>
-                          <ul class="list-unstyled white-link footer-links">
-                              <li>
-                                  <a href="python.html">Python</a>
-                              </li>
-                              <li>
-                                  <a href="c++.html">C++</a>
-                              </li>
-                              <li>
-                                  <a href="c.html">C language</a>
-                              </li>
-                              <li>
-                                  <a href="java.html">Java</a>
-                              </li>
-                              <li>
-                                  <a href="php.html">PHP</a>
-                              </li>
-                          </ul>
-                      </div>
-                      <div class="col-sm-6 col-lg-2 my-4">
-                          <h5 class="text-white h6 mb-4">FAQ</h5>
-                          <ul class="list-unstyled white-link footer-links">
-                              <li>
-                                  <a href="about">About</a>
-                              </li>
-                              <li>
-                                  <a href="career.html">Careers</a>
-                              </li>
-<!--                               <li>
-                                  <a href="">Cureer After Courses</a>
-                              </li> -->
-<!--                               <li>
-                                  <a href="#">Feedbacks</a>
-                              </li> -->
-                              <!-- <li>
-                                  <a href="#"></a>
-                              </li> -->
-                          </ul>
-                      </div>
-                      <div class="col-sm-6 col-lg-3 my-4">
-                          <h5 class="text-white h6 mb-4">Address</h5>
-                          <div class="white-link">
-                            <div class="d-flex">
-                              <!-- <div class="avatar avatar-lg rounded">
-                                  <img src="LOGO 3.png" title="" alt="">
-                              </div> -->
-                              <div class="col ps-3">
-                                  <small class="text-white">29 March 2024</small>
-                                  <h6 class="font-w-500 h6 m-0"><a class="text-white" href="#">Radhey Shyam Colony, Phase 5, Gali No.3 Near By CNG Pertrol Pump</a></h6>
-                              </div>
-                          </div>
-                            <div class="d-flex my-2">
-                              <div class="col ps-3">
-                                  <small class="text-white-70">CCITINDIA</small>
-                                  <h6 class="font-w-500 h6 m-0 text-light">Muradnagar</h6>
-                              </div>
-                          </div>
-                          <div class="nav mx-3 my-4 footer-socila-icon">
-                            <a href="" target="_blank"><i class="fab fa-facebook-f" ></i></a>
-                            <a href="https://www.youtube.com/@CyberCode212/" target="_blank"><i class="fab fa-youtube" ></i></a>
-                            <a href="https://www.instagram.com/ccit_india/" target="_blank"><i class="fab fa-instagram"  ></i></a>
-                            <!-- <a href="#"><i class="fab fa-linkedin-in"></i></a> -->
+  <footer class="bg-dark-gradient footer">
+    <div class="footer-top">
+        <div class="container">
+            <div class="footer-border-bottom pb-6 mb-5">
+                <div class="row">
+                    <div class="col-lg-4 col-xl-3">
+                        <h4 class="text-white">
+                            Enquiry Now
+                        </h4>
+                    </div>
+                    <div class="col-lg-4 col-xl-6">
+                        <form class="d-flex flex-row mb-2 p-1 bg-white input-group">
+                            <input type="email" class="form-control rounded-0 border-0" placeholder="Ex:shivam@gmail.com">
+                            <button class="btn btn-secondary rounded-0 flex-shrink-0" type="submit">Subscribe</button>
+                        </form>
+                    </div>
+                    <div class="col-lg-4 col-xl-3">
+                        <div class="text-lg-end text-white">
+                            <span class="h6">Call Us On</span><br>
+                            <span class="h3">+91 85958 79229</span>
                         </div>
-                          </div>
-                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6 col-lg-3 my-4">
+                    <div class="mb-4">
+                        <img src="LOGO 3.png" width="200px" title="" alt="">
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-2 my-4">
+                    <h5 class="text-white h6 mb-4">Courses</h5>
+                    <ul class="list-unstyled white-link footer-links">
+                        <li>
+                            <a href="">Tally Level 1</a>
+                        </li>
+                        <li>
+                            <a href="#">SEO/SMO</a>
+                        </li>
+                        <li>
+                            <a href="#">AUTOCAD</a>
+                        </li>
+                        <li>
+                            <a href="#">Linux Server/RHCSA</a>
+                        </li>
+                        <li>
+                            <a href="#">Database Technology</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-sm-6 col-lg-2 my-4">
+                    <h5 class="text-white h6 mb-4">Programming</h5>
+                    <ul class="list-unstyled white-link footer-links">
+                        <li>
+                            <a href="#">Python</a>
+                        </li>
+                        <li>
+                            <a href="#">C++</a>
+                        </li>
+                        <li>
+                            <a href="#">C language</a>
+                        </li>
+                        <li>
+                            <a href="#">Java</a>
+                        </li>
+                        <li>
+                            <a href="#">PHP</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-sm-6 col-lg-2 my-4">
+                    <h5 class="text-white h6 mb-4">FAQ</h5>
+                    <ul class="list-unstyled white-link footer-links">
+                        <li>
+                            <a href="#about">About</a>
+                        </li>
+                        <li>
+                            <a href="career.html">Careers</a>
+                        </li>
+                        <li>
+                            <a href="">Cureer After Courses</a>
+                        </li>
+                        <li>
+                            <a href="#">Feedbacks</a>
+                        </li>
+                        <!-- <li>
+                            <a href="#"></a>
+                        </li> -->
+                    </ul>
+                </div>
+                <div class="col-sm-6 col-lg-3 my-4">
+                    <h5 class="text-white h6 mb-4">Address</h5>
+                    <div class="white-link">
+                      <div class="d-flex">
+                        <!-- <div class="avatar avatar-lg rounded">
+                            <img src="LOGO 3.png" title="" alt="">
+                        </div> -->
+                        <div class="col ps-3">
+                            <small class="text-white">29 March 2024</small>
+                            <h6 class="font-w-500 h6 m-0"><a class="text-white" href="#">Radhey Shyam Colony, Phase 5, Gali No.3 Near By CNG Pertrol Pump</a></h6>
+                        </div>
+                    </div>
+                      <div class="d-flex my-2">
+                        <div class="col ps-3">
+                            <small class="text-white-70">CCITINDIA</small>
+                            <h6 class="font-w-500 h6 m-0 text-light">Muradnagar</h6>
+                        </div>
+                    </div>
+                    <div class="nav mx-3 my-4 footer-socila-icon">
+                      <a href="" target="_blank"><i class="fab fa-facebook-f" ></i></a>
+                      <a href="https://www.youtube.com/@CyberCode212/" target="_blank"><i class="fab fa-youtube" ></i></a>
+                      <a href="https://www.instagram.com/ccit_india/" target="_blank"><i class="fab fa-instagram"  ></i></a>
+                      <!-- <a href="#"><i class="fab fa-linkedin-in"></i></a> -->
                   </div>
-              </div>
-          </div>
-          <div class="footer-bottom footer-border-top light py-3">
-              <div class="container text-center">
-                  <p class="m-0">© 2024 copyright <a href="index.html" class="text-reset text-white">CCITINDIA</a></p>
-              </div>
-          </div>
-      </footer>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom footer-border-top light py-3">
+        <div class="container text-center">
+            <p class="m-0">© 2024 copyright <a href="index.html" class="text-reset text-white">CCITINDIA</a></p>
+        </div>
+    </div>
+</footer>
 <!-- </div> -->
 
 
 <script src="bootnavbar.js"></script>
+<script src="phone.js"></script>
 <script>
       new bootnavbar();
     </script>
